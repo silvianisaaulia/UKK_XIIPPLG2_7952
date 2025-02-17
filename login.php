@@ -21,7 +21,7 @@ include "koneksi.php";
                         <div class="row justify-content-center">
                             <div class="col-lg-5">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header bg-dark" style="color: white;"><h3 class="text-center font-weight-light my-4">Login </h3></div>
+                                    <div class="card-header bg-dark" style="color: white;"><h3 class="text-center font-weight-light my-4">Login ToDoList</h3></div>
                                     <div class="card-body" style="background-color:gainsboro">
                                         <?php
                                         if(isset($_POST['login'])) {

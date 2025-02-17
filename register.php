@@ -9,7 +9,7 @@ include "koneksi.php";
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Register Ke ToDoList</title>
+        <title>Register Ke Perpustakaan Digital</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
@@ -33,7 +33,7 @@ include "koneksi.php";
                                             $level = $_POST['level'];
                                             $password = md5($_POST['password']); 
                                             
-                                            $insert = mysqli_query($koneksi ,"INSERT INTO user(nama,email,alamat,no_telepon,username,password,level) VALUES('$nama','$email','$alamat','$no_telepon','$username','$password','$level')");
+                                            $insert = mysqli_query($koneksi ,"INSERT INTO users(nama,email,alamat,no_telepon,username,password,level) VALUES('$username','$email','$alamat','$no_telepon','$username','$password','$level')");
 
                                             if($insert){
                                                 echo '<script>alert("Selamat, Register Berhasil. Silahkan Login."); location.href="login.php"</script>';
@@ -67,13 +67,7 @@ include "koneksi.php";
                                                 <input class="form-control" id="inputPassword" required name="password" type="password" placeholder="Masukkan Password" />
                                                 <label for="inputPassword">Password</label>
                                             </div>
-                                            <div class="form-floating mb-5">
-                                                <select name="level" required class="form-select form-control ">
-                                                    <option value="Peminjam">Peminjam</option>
-                                                    <option value="admin">admin</option>
-                                                </select>
-                                                <label >Level</label>
-                                            </div>
+                                            
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                                 <button class="btn btn-primary" type="submit" name="register" value="register">Register</button>
                                                 <a class="btn btn-danger" href="login.php">Login</a>
@@ -82,7 +76,7 @@ include "koneksi.php";
                                     </div>
                                     <div class="card-footer text-center py-3 bg-dark">
                                         <div class="small"><a href="register.html">
-                                            &copy; 2025 ToDoList.
+                                            &copy; 2025 Perpustakaan Digital.
                                         </a></div>
                                     </div>
                                 </div>
