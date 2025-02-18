@@ -55,12 +55,21 @@ include "koneksi.php";
                 </nav>
             </div>
             <div id="layoutSidenav_content">
-                <main>
+            <main>
                     <div class="container-fluid px-4">
+                        <?php
+
+                        $page = isset($_GET['page']) ? $_GET['page'] : 'home';
+                        if(file_exists($page . '.php')){
+                            include $page . '.php';
+                        }else{
+                            include '404.php';
+                        }
+                        ?>
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
+                    <div class="container-fluid px-2">
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted">Copyright &copy; 2025 ToDoList</div>
                         </div>
