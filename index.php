@@ -39,7 +39,7 @@ include "koneksi.php";
                                 Categories
                             </a>
                             <a class="nav-link" href="?page=tasks">
-                                <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Tasks
                             </a>
                             <a class="nav-link" href="logout.php">
