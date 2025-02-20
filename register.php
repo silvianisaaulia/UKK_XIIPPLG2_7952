@@ -21,7 +21,7 @@ include "koneksi.php";
                         <div class="row justify-content-center">
                             <div class="col-lg-5">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header bg-dark" style="color: white;"><h3 class="text-center font-weight-light my-4">Register Perpustakaan Digital</h3></div>
+                                    <div class="card-header bg-dark" style="color: white;"><h3 class="text-center font-weight-light my-4">Register ToDoList</h3></div>
                                     <div class="card-body" style="background-color:gainsboro">
                                         <?php
                                           if(isset($_POST[ 'register'])) {
@@ -65,8 +65,8 @@ include "koneksi.php";
                                                 <label for="inputPassword">Password</label>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <button class="btn btn-primary" type="submit" name="register" value="register">Register</button>
-                                                <a class="btn btn-danger" href="login.php">Login</a>
+                                                <button class="btn btn-outline-primary" type="submit" name="register" value="register">Register</button>
+                                                <a class="btn btn-outline-danger" href="login.php">Login</a>
                                             </div>
                                         </form>
                                     </div>

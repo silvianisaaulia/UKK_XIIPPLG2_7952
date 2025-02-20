@@ -19,14 +19,14 @@ include "koneksi.php";
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark" style="background-color:rgb(44, 68, 134);">
             <a class="navbar-brand ps-3" href="index.html">TodoList</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         </nav>
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                    <div class="sb-sidenav-menu bg-secondary">
+                    <div class="sb-sidenav-menu" style="background-color:rgb(104, 134, 201);">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
                             <a class="nav-link" href="?">
@@ -38,7 +38,7 @@ include "koneksi.php";
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Categories
                             </a>
-                            <a class="nav-link" href="?page=tasks">
+                            <a class="nav-link" href="?page=Tasks">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Tasks
                             </a>
@@ -48,7 +48,7 @@ include "koneksi.php";
                             </a>
                         </div>
                     </div>
-                    <div class="sb-sidenav-footer">
+                    <div class="sb-sidenav-footer"  style="background-color:rgb(44, 68, 134);">
                         <div class="small">Logged in as:</div>
                         <?php echo $_SESSION['users']['name']; ?>
                     </div>
@@ -68,13 +68,6 @@ include "koneksi.php";
                         ?>
                     </div>
                 </main>
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-2">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; 2025 ToDoList</div>
-                        </div>
-                    </div>
-                </footer>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
