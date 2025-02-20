@@ -5,7 +5,7 @@ if(isset($_POST['tasks'])) {
     $user_id = $_POST['user_id'];
     $status = $_POST['status'];
 
-   $query = mysqli_query($koneksi, "INSERT INTO tasks(category_id,task,user_id,status) values('$category_id','$task',$user_id,'$status')");
+   $query = mysqli_query($koneksi, "INSERT INTO tasks(id,category_id,task,user_id,status) values('$id','$category_id,$task,$user_id,$status)");
 
     if($query) {
         echo '<script>alert("Tambah Data Berhasil")</script>';
